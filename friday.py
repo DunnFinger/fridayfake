@@ -18,7 +18,7 @@ def speak(audio):
  #Thời gian   
 def time():
     Time=datetime.datetime.now().strftime("%I:%M:%p") 
-    speak("It is")
+    speak("It is ")
     speak(Time)
 
 #Chào theo thời gian
@@ -39,10 +39,10 @@ def command():
         c.pause_threshold=2
         audio=c.listen(source)
     try:
-        query = c.recognize_google(audio,language='vi')
+        query = c.recognize_google(audio,language='en-US')
         print("You: "+query)
     except sr.UnknownValueError:
-        print('Sorry sir! I didn\'t get that! Try typing the command!')
+        print('Sorry! I didn\'t get that! Try typing the command!')
         query = str(input('Your order is: '))
     return query
 
