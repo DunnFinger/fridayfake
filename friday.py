@@ -21,8 +21,8 @@ def time():
     speak("It is")
     speak(Time)
 
+#Chào theo thời gian
 def welcome():
-        #Chao hoi
         hour=datetime.datetime.now().hour
         if hour >= 6 and hour<12:
             speak("Good Morning !")
@@ -51,7 +51,6 @@ if __name__  =="__main__":
 
     while True:
         query=command().lower()
-        #All the command will store in lower case for easy recognition
         if "google" in query:
             speak("What should I search")
             search=command().lower()
