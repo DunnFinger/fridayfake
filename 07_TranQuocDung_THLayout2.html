@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branding Page</title>
+    <style>
+        .col-wrap {
+            display: table; 
+            width: 100%; 
+        }
+
+        .col {
+            display: table-cell;
+            padding: 1rem
+        }
+        .col:nth-child(even){
+            
+        }
+        .col:nth-child(odd){
+            
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #e0e0e0;
+            padding: 10px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #2ecc71;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>This is my branding</h1>
+        <p>Say something about website</p>
+    </header>
+    <nav>
+        <a href="#" style="background-color: orange">Home</a>
+        <a href="#">News</a>
+        <a href="#">About</a>
+    </nav>
+    <h3> Using table properties</h3>
+<div class="col-wrap">
+    <div class="col">
+        <h2>Column 1</h2>
+        <p>Hello World</p>
+    </div>
+
+    <div class="col">
+        <h2>Column 2</h2>
+        <p>Hello World!</p>
+        <p>Hello World!</p>
+        <p>Hello World!</p>
+        <p>Hello World!</p>
+    </div>
+
+    <div class="col">
+        <h2>Column 3</h2>
+        <p>Some other text..</p>
+        <p>Some other text..</p>
+    </div>
+</div>
+</body>
+<footer>
+    HyHy 2018
+</footer>
